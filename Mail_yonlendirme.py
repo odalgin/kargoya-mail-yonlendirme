@@ -12,17 +12,17 @@ from google.auth.transport.requests import Request
 # AYARLAR
 # ========================
 SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
-TOKEN_PATH = "token.pickle"
+TOKEN_PATH = "token.pickle" # credentials.json dosyasınızı oluşturduktan sonra kodu çalıştırdığınızda oluşturulacaktır.
 CREDENTIALS_PATH = "credentials.json"
 LAST_ORDER_FILE = "last_order.txt"
 
-KARGO_MAIL = "onlinesipariskargo@gmail.com"   # Kargo ekibinin mail adresi
-GONDEREN_MAIL = "omer.dalgin@kinzi.com.tr"  # Gönderen mail adresin (SMTP için de kullanılacak)
+KARGO_MAIL = ""   # Kargo ekibinin mail adresi
+GONDEREN_MAIL = ""  # Gönderen mail adresin (SMTP için de kullanılacak)
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-SMTP_USER = "omer.dalgin@kinzi.com.tr"
-SMTP_PASS = "mihsgrkiirbsizoy"  # Gmail uygulama şifresi kullanılmalı
+SMTP_USER = "" # Gönderen mail adresin
+SMTP_PASS = ""  # Gmail uygulama şifresi kullanılmalı
 
 
 # ========================
@@ -148,4 +148,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
